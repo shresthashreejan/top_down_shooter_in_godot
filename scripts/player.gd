@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var movement_speed : float = 200
+var movement_speed : float = 100
 var player_direction : Vector2
 
 func _physics_process(delta: float) -> void:
@@ -9,7 +9,7 @@ func _physics_process(delta: float) -> void:
     player_direction = player_direction.normalized()
 
     if player_direction:
-        velocity = player_direction * movement_speed
+        velocity = player_direction * movement_speed * delta
     else:
         velocity = Vector2.ZERO
 
