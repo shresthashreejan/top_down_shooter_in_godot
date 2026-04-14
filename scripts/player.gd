@@ -9,7 +9,7 @@ func _physics_process(delta: float) -> void:
     player_direction = player_direction.normalized()
 
     if player_direction:
-        velocity = player_direction * movement_speed * delta
+        velocity = player_direction * movement_speed
     else:
         velocity = Vector2.ZERO
 
