@@ -5,6 +5,3 @@
 [node name="World" type="Node2D" unique_id=288450491]
 
 [node name="Player" parent="." unique_id=1680266365 instance=ExtResource("1_nnsk1")]
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2095092979]
-zoom = Vector2(3, 3)
