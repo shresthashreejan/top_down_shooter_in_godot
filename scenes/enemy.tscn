@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b5feo0lugmejk"]
+
+[ext_resource type="Texture2D" uid="uid://ca637wxm1hunq" path="res://assets/Tilesheet/colored-transparent_packed.png" id="1_7p1mj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+radius = 6.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1680266365]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1999377220]
+texture = ExtResource("1_7p1mj")
+region_enabled = true
+region_rect = Rect2(416, 96, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=356484587]
+shape = SubResource("CircleShape2D_g2els")
