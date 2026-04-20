@@ -18,6 +18,10 @@ region_rect = Rect2(480, 144, 16, 16)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=356484587]
 shape = SubResource("CircleShape2D_g2els")
 
+[node name="Gun" type="Marker2D" parent="CollisionShape2D" unique_id=2102939784]
+unique_name_in_owner = true
+position = Vector2(8, 0)
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=191542133]
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true

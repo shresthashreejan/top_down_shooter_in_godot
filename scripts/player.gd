@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
-var movement_speed : float = 100
-var player_direction : Vector2
+const BULLET_CLASS = preload("res://scenes/bullet.tscn")
+
+var movement_speed: float = 100.0
+var player_direction: Vector2
 
 func _physics_process(delta: float) -> void:
     player_direction.x = Input.get_axis("move_left", "move_right")
@@ -13,4 +15,14 @@ func _physics_process(delta: float) -> void:
     else:
         velocity = Vector2.ZERO
 
+    look_at(get_global_mouse_position())
+
     move_and_slide()
+
+func shoot() -> void:
+    var bullet = BULLET_CLASS.instantiate()
+    bullet.init(%Gun)
+
+func _input(event: InputEvent) -> void:
+    if event.is_action_pressed("shoot"):
+        shoot()
