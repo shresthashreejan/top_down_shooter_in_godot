@@ -15,8 +15,6 @@ func _physics_process(delta: float) -> void:
     else:
         velocity = Vector2.ZERO
 
-    look_at(get_global_mouse_position())
-
     move_and_slide()
 
 func shoot() -> void:

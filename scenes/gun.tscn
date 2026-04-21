@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://buaemilsp45l3"]
+
+[ext_resource type="Script" uid="uid://dtv76a14qsv7p" path="res://scripts/gun.gd" id="1_og67c"]
+[ext_resource type="Texture2D" uid="uid://cqfvajxvnala0" path="res://assets/Tilesheet/colored-transparent.png" id="1_x77fm"]
+
+[node name="Gun" type="Node2D" unique_id=1019014362]
+script = ExtResource("1_og67c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1294912811]
+texture = ExtResource("1_x77fm")
+region_enabled = true
+region_rect = Rect2(629, 155, 16, 12)

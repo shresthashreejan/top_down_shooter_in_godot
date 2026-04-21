@@ -5,7 +5,44 @@
 [node name="EnemySpawner" type="Node2D" unique_id=836439693]
 script = ExtResource("1_ks1gq")
 
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1645647025]
+position = Vector2(-133, -347)
+
+[node name="Marker2D2" type="Marker2D" parent="." unique_id=415307057]
+position = Vector2(-2, -347)
+
+[node name="Marker2D3" type="Marker2D" parent="." unique_id=2091091689]
+position = Vector2(122, -347)
+
+[node name="Marker2D4" type="Marker2D" parent="." unique_id=1873367806]
+position = Vector2(-123, 399)
+
+[node name="Marker2D5" type="Marker2D" parent="." unique_id=1829138276]
+position = Vector2(8, 399)
+
+[node name="Marker2D6" type="Marker2D" parent="." unique_id=1408757677]
+position = Vector2(132, 399)
+
+[node name="Marker2D7" type="Marker2D" parent="." unique_id=1913057336]
+position = Vector2(-620, 86)
+
+[node name="Marker2D8" type="Marker2D" parent="." unique_id=255366597]
+position = Vector2(-620, -86)
+
+[node name="Marker2D9" type="Marker2D" parent="." unique_id=1526089864]
+position = Vector2(-620, -2)
+
+[node name="Marker2D10" type="Marker2D" parent="." unique_id=1521012518]
+position = Vector2(645, 96)
+
+[node name="Marker2D11" type="Marker2D" parent="." unique_id=578903399]
+position = Vector2(645, -76)
+
+[node name="Marker2D12" type="Marker2D" parent="." unique_id=470207492]
+position = Vector2(645, 8)
+
 [node name="Timer" type="Timer" parent="." unique_id=1152075961]
+wait_time = 0.1
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

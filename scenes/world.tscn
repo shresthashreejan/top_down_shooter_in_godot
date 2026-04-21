@@ -8,4 +8,5 @@
 [node name="Player" parent="." unique_id=1680266365 instance=ExtResource("1_nnsk1")]
 
 [node name="EnemySpawner" parent="." unique_id=836439693 instance=ExtResource("2_rwgxs")]
-position = Vector2(-175, -92)
+position = Vector2(5.9604645e-08, -1.1920929e-07)
+scale = Vector2(0.2, 0.2)
