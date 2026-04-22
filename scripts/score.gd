@@ -1,3 +1,4 @@
-extends Control
+extends Label
 
-@onready var score = $Label
+func _process(delta: float) -> void:
+    text = str(Global.score)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b58hjuq5wy6q"]
+
+[ext_resource type="Script" uid="uid://ciivwf2r3vjkx" path="res://scripts/score.gd" id="1_8juob"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8juob"]
+font_size = 24
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+
+[node name="Score" type="Label" unique_id=1865143424]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_8juob")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_8juob")
