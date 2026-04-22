@@ -13,9 +13,8 @@ func init(parent: Node2D) -> void:
 func _physics_process(delta: float) -> void:
     position += direction * speed * delta
 
-
-
 func _on_body_entered(body: Node2D) -> void:
     if body.has_method("add_hp"):
         body.add_hp(-damage)
         queue_free()
+        Global.score += 1

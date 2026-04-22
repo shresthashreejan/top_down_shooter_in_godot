@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cahlqcouwu1kp" path="res://scenes/player.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://b3x50c42lm0ui" path="res://scenes/enemy_spawner.tscn" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://chb323qf3ofdd" path="res://scenes/pause_menu.tscn" id="3_4wyf3"]
 
 [node name="World" type="Node2D" unique_id=288450491]
 
@@ -10,3 +11,7 @@
 [node name="EnemySpawner" parent="." unique_id=836439693 instance=ExtResource("2_rwgxs")]
 position = Vector2(5.9604645e-08, -1.1920929e-07)
 scale = Vector2(0.2, 0.2)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1873648959]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=671513417 instance=ExtResource("3_4wyf3")]
