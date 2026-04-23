@@ -15,10 +15,11 @@ func quit() -> void:
 	get_tree().quit()
 
 func trigger_pause() -> void:
-	if Input.is_action_just_pressed("escape") and get_tree().paused == false:
-		pause()
-	elif Input.is_action_just_pressed("escape") and get_tree().paused == true:
-		resume()
+	if Input.is_action_just_pressed("escape"):
+		if get_tree().paused:
+			resume()
+		else:
+			pause()
 
 func _on_resume_pressed() -> void:
 	resume()
